@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação JS</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <section class="hero">
+        <h1 class="subTitulo"><bold>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</bold></h1>
+        <p class="textoExplicativo">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h</p>
+    </section>
+    <section class="formulario">
+        <form class="camposObrigatorios">
+            <input type="name" name="nome" id="nomeCompleto" placeholder="Nome Completo*">
+            <br><br>
+            <input type="email" name="email" id="email" placeholder="Email*">
+            <br><br>
+            <input type="tel" name="telefone" id="numeroDeTelefone" placeholder="Telefone*">
+            <br><br>
+            <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem*">
+            <br>
+            <p class="mensagemCamposObrigatorios">*campos obrigatórios</p>
+            <br><br>
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+    </section>
+
+
+    <script type="text/javascript" src="./src/js/formulario.js"></script>
+</body>
+</html>

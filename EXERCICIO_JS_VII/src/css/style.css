@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/bg-repeat.jpg);
+    min-height: 100vh;
+    background-repeat: round;
+}
+
+section {
+    display: flex;
+    position: relative;
+}
+h1 {
+    font-weight: 500;
+}
+
+h1, p {
+    color: white;
+}
+
+p, .mensagemCamposObrigatorios {
+    color: black;
+}
+
+.hero {
+    padding-top: 116px;
+    width: 300px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    text-decoration-color: white;
+}
+
+.formulario {
+    height: 378px;
+    width: 340px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 76px;
+    left: 392px;
+    border-radius: 3px;
+}
