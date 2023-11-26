@@ -10,26 +10,39 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
+
     <section class="hero">
-        <h1 class="subTitulo"><bold>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</bold></h1>
-        <p class="textoExplicativo">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h</p>
-    </section>
-    <section class="formulario">
-        <form class="camposObrigatorios">
-            <input type="name" name="nome" id="nomeCompleto" placeholder="Nome Completo*">
-            <br><br>
-            <input type="email" name="email" id="email" placeholder="Email*">
-            <br><br>
-            <input type="tel" name="telefone" id="numeroDeTelefone" placeholder="Telefone*">
-            <br><br>
-            <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem*">
-            <br>
-            <p class="mensagemCamposObrigatorios">*campos obrigatórios</p>
-            <br><br>
-            <input type="submit" value="Enviar" id="enviar">
-        </form>
+        <h1><bold>FICOU COM DÚVIDA? <br>NOS MANDE UMA MENSAGEM!</bold></h1>
+        <p>Caso tenha ficado com qualquer dúvida <br>basta nos mandar uma mensagem e <br>entraremos em contato em menos de 24h</p>
     </section>
 
+   <div class="container">
+        <form id="form" class="form">
+            <div class="controle-de-form">
+            <input type="text" id="username" placeholder="Nome completo *">
+            <small>campo obrigatório</small>
+            </div>
+
+            <div class="controle-de-form">
+                <input type="email" id="email" placeholder="Email *">
+                <small>campo obrigatório</small>
+            </div>
+
+            <div class="controle-de-form">
+                <input type="tel" id="tel" placeholder="Telefone *">
+                <small>campo obrigatório</small>
+            </div>
+
+            <div class="controle-de-form">
+                <input type="text" id="message" placeholder="Mensagem *">
+                <small>campo obrigatório</small>
+            </div>
+            <p>*campos obrigatórios</p>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
 
     <script type="text/javascript" src="./src/js/formulario.js"></script>
 </body>

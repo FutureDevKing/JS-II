@@ -5,41 +5,79 @@ body {
     background: url(../img/bg-repeat.jpg);
     min-height: 100vh;
     background-repeat: round;
-}
-
-section {
-    display: flex;
-    position: relative;
-}
-h1 {
-    font-weight: 500;
-}
-
-h1, p {
-    color: white;
-}
-
-p, .mensagemCamposObrigatorios {
-    color: black;
+    display: inline-flex;
 }
 
 .hero {
-    padding-top: 116px;
-    width: 300px;
-    height: 111px;
+    align-self: center;
+    color: white;
     display: flex;
     flex-direction: column;
-    text-decoration-color: white;
+    flex-wrap: wrap;
+    padding: 45px;
+
 }
 
-.formulario {
+.container {
     height: 378px;
     width: 340px;
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 76px;
-    left: 392px;
-    border-radius: 3px;
+    align-self: center;
+    justify-self: flex-end;   
+
+}
+
+.form {
+    padding: 20px;
+}
+
+.controle-de-form {
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.controle-de-form input {
+    border: 1px solid black;
+    display: block;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 300px;
+    padding: 4px;
+}
+
+.controle-de-form small {
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
+
+form div:nth-last-child(3) input{
+    height: 116px;
+    align-content: flex-start;
+}
+
+.form button {
+    width: 100%;
+    color: white;
+    background-color: #00ff629c;
+    border: none;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+/* Caso de Erro e Sucesso */
+
+.controle-de-form.sucesso input {
+    border-color: #2ecc71;
+}
+
+.controle-de-form.erro input{
+    border-color: #e74c3c;
+}
+
+.controle-de-form.erro small {
+    visibility: visible;
+    color: #e74c3c;
 }
